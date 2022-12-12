@@ -1,0 +1,15 @@
+*~
+\#*\#
+.\#*
+.Trash-*
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+*.lnk
+out/

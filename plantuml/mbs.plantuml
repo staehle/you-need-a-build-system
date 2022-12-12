@@ -1,0 +1,28 @@
+@startuml MBS
+allowmixing
+
+object "mylibrary source" as mylibrarysrc {
+  CMakeLists.txt
+  mylibrary.cpp
+  mylibrary.h
+}
+
+object "myapp source" as myappsrc {
+  header.h
+  main.c
+  Makefile
+}
+
+package RootFS.img {
+  node myapp 
+
+  node "mylibrary.so" as mylibrary
+}
+
+mylibrary --> myapp
+
+mylibrarysrc -l-> mylibrary
+myappsrc -l-> myapp
+
+
+@enduml

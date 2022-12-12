@@ -1,0 +1,15 @@
+@startuml GCBS
+allowmixing
+object Makefile {
+  gcc -o myapp main.c
+}
+
+object main.c {
+  Hello world!
+}
+
+node myapp
+
+Makefile <-- main.c
+Makefile --> myapp
+@enduml
