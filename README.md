@@ -120,9 +120,9 @@ The BitBake team's evaluation was relatively straightforward, considering that t
 
 ### The BuildStream Evaluation
 
-The BuildStream team's evaluation had a bit more work since it doesn't really have an equivalent _OpenEmbedded_ project. The closest existing BuildStream project to it is [_FreeDesktopSDK_](https://freedesktop-sdk.io/). However, this project is more focused on cross-compiling for container environments, not embedded ones. It was decided early on that it wouldn't quite be appropriate to use _FreeDesktopSDK_ as-is. Additionally, since we know of BitBake projects that do not use the _OpenEmbedded_ project ([_Isar_](https://github.com/ilbers/isar) for example), we thought it would be fun to also evaluate how well BuildStream does without _FreeDesktopSDK_!
+The BuildStream team's evaluation had a bit more work since it doesn't really have an equivalent _OpenEmbedded_ project. The closest existing BuildStream project to it is [_FreedesktopSDK_](https://freedesktop-sdk.io/). However, this project is more focused on natively built outputs while cross-compiling as little as possible, and wasn't as suitable for the more classical cross-compilation approach for embedded environments that we needed, so it was decided early on that it wouldn't quite be appropriate to use _FreedesktopSDK_ as-is. Additionally, since we know of BitBake projects that do not use the _OpenEmbedded_ project ([_Isar_](https://github.com/ilbers/isar) for example), we thought it would be fun to also evaluate how well BuildStream does without _FreedesktopSDK_!
 
-What the team here created is essentially a minimalist BuildStream framework project that specifically focuses on cross-compiling for embedded environments, much like _OpenEmbedded_, making it a much better analogy than we created earlier with _FreeDesktopSDK_. The only item that was still utilized from them was their prebuilt sandbox.
+What the team here created is essentially a minimalist BuildStream framework project that specifically focuses on cross-compiling for embedded environments, much like _OpenEmbedded_, making it a much better analogy than we created earlier with _FreedesktopSDK_. The only item that was still utilized from them was their prebuilt sandbox.
 
 ### Pros and Cons
 
